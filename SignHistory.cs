@@ -8,7 +8,7 @@ namespace Oxide.Plugins
 	[Info("SignHistory", "Kisuka", "1.0.0")]
 	[Description("Creates a changelog for signs.")]
 
-  class SignHistory : RustPlugin
+	class SignHistory : RustPlugin
 	{
 		private const string AdminPerm = "signhistory.admin";
 		private Dictionary<string, Sign> signs = new Dictionary<string, Sign>();
@@ -69,7 +69,7 @@ namespace Oxide.Plugins
 
 		void OnSignUpdated(Signage sign, BasePlayer player, string text)
 		{
-		    logSignChange(sign, player);
+			logSignChange(sign, player);
 		}
 
 		void logSignChange(Signage sign, BasePlayer player)
